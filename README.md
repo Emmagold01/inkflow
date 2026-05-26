@@ -1,12 +1,28 @@
-# React + Vite
+# Inkflow 🚀
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Inkflow is a self-publishing platform designed specifically for African creators, starting with Nigeria. We are solving the major hurdle where local authors face arbitrary account terminations and payment restrictions on global platforms like Amazon KDP. 
 
-Currently, two official plugins are available:
+With Inkflow, authors can sign up seamlessly using their real local details and get paid their royalties directly into their Nigerian bank accounts in Naira—no VPNs, no fake locations, and no stress.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📌 The Big Picture
+Our platform connects two distinct web experiences sharing a single database backend:
+* **The Author Dashboard (The Portal):** A private space for writers to upload manuscripts, set pricing, track real-time sales, and manage payouts.
+* **The Storefront (The Marketplace):** A public e-commerce bookshop where readers discover and purchase books across multiple genres (creative fiction, short stories, poetry, and indie series).
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ The MVP Scope (What We Are Building First)
+To launch quickly and eliminate complex shipping or printing logistics on day one, **we are focusing exclusively on eBooks first:**
+
+* **Author Signup & Upload:** Simple registration with real local info and a fast form to upload book covers and digital manuscript files.
+* **Public Marketplace:** A clean, searchable storefront catalog sorted by creative literary categories.
+* **Paystack Checkout:** Secure payment gateway integration supporting local debit cards, bank transfers, and USSD for readers.
+* **Royalty Wallet:** A simple financial summary dashboard for authors to see copies sold and current earnings.
+
+---
+
+## 🚀 Future Roadmap
+Once the digital eBook ecosystem is running smoothly, Inkflow will expand into:
+* **Print-on-Demand (POD):** Allowing physical paperbacks to live as digital files until a reader clicks buy, automatically triggering local print shops in Nigeria to print and ship exactly one copy directly to their doorstep.

@@ -19,13 +19,13 @@ export default function Navbar() {
           <div className="hidden gap-7 md:flex">
             <ul className="text-muted flex items-center space-x-7 text-[14px] font-medium">
               <li className="transition-all duration-500 hover:text-white">
-                <a href="#">How it works</a>
+                <a href="#how">How it works</a>
               </li>
               <li className="transition duration-500 hover:text-white">
-                <a href="#">For Authors</a>
+                <a href="#features">For Authors</a>
               </li>
               <li className="transition duration-500 hover:text-white">
-                <a href="#">Pricing</a>
+                <a href="#calc">Pricing</a>
               </li>
             </ul>
 
@@ -61,17 +61,17 @@ export default function Navbar() {
         <div className="bg-darkbg/95 overflow-hidden backdrop-blur-lg">
           <ul className="flex flex-col space-y-4 px-5 py-6 text-[16px] font-medium text-gray-300">
             <li className="transition duration-300 hover:text-white">
-              <a href="#" onClick={toggleMobile} className="block w-full">
+              <a href="#how" onClick={toggleMobile} className="block w-full">
                 How it works
               </a>
             </li>
             <li className="transition duration-300 hover:text-white">
-              <a href="#" onClick={toggleMobile} className="block w-full">
+              <a href="#features" onClick={toggleMobile} className="block w-full">
                 For Authors
               </a>
             </li>
             <li className="transition duration-300 hover:text-white">
-              <a href="#" onClick={toggleMobile} className="block w-full">
+              <a href="#calc" onClick={toggleMobile} className="block w-full">
                 Pricing
               </a>
             </li>

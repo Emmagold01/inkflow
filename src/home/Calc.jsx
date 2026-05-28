@@ -1,6 +1,6 @@
 export default function Calc() {
   return (
-    <section className="bg-darkbg2 border-fbord border-t border-b px-7 lg:px-20 py-15">
+    <section id="calc" className="bg-darkbg2 border-fbord border-t border-b px-7 lg:px-20 py-15">
       <div className="mx-auto grid max-w-6xl items-center grid-cols-1 lg:grid-cols-2 gap-15">
         <div>
           <div className="text-coral mb-3 text-xs font-bold tracking-widest uppercase">

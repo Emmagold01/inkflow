@@ -32,7 +32,7 @@ export default function Features() {
     },
   ];
   return (
-    <section className="mx-auto max-w-6xl px-10 py-15 pt-0 md:px-20">
+    <section className="mx-auto max-w-6xl px-7 py-15 pt-0 md:px-20">
       <div>
         <div className="text-coral mb-3 text-xs font-bold tracking-widest uppercase">
           Features

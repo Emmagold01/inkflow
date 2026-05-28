@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Icon } from "@iconify/react";
+import { openTallyForm } from "../utils/tally";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -28,7 +29,10 @@ export default function Navbar() {
               </li>
             </ul>
 
-            <button className="from-coral to-amber cursor-pointer rounded-md bg-linear-to-r px-6 py-2 text-[14px] font-bold transition-all duration-200 hover:brightness-80">
+            <button 
+              onClick={() => openTallyForm()}
+              className="from-coral to-amber cursor-pointer rounded-md bg-linear-to-r px-6 py-2 text-[14px] font-bold transition-all duration-200 hover:brightness-80"
+            >
               Join Waitlist
             </button>
           </div>
@@ -72,7 +76,13 @@ export default function Navbar() {
               </a>
             </li>
             <li className="pt-2">
-              <button className="from-coral to-amber w-full cursor-pointer rounded-md bg-linear-to-r py-3 text-[14px] font-bold transition-all duration-200 hover:brightness-80">
+              <button 
+                onClick={() => {
+                  openTallyForm();
+                  toggleMobile();
+                }}
+                className="from-coral to-amber w-full cursor-pointer rounded-md bg-linear-to-r py-3 text-[14px] font-bold transition-all duration-200 hover:brightness-80"
+              >
                 Join Waitlist
               </button>
             </li>

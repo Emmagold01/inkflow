@@ -17,7 +17,7 @@ export default function How() {
     },
   ];
   return (
-    <section className="mx-auto max-w-6xl px-10 md:px-20 py-15">
+    <section className="mx-auto max-w-6xl px-7 md:px-20 py-15">
       <div>
         <div className="text-coral mb-3 text-xs font-bold tracking-widest uppercase">
           How it works

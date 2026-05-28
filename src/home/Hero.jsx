@@ -1,4 +1,9 @@
+import { useState } from "react";
+import { openTallyForm } from "../utils/tally";
+
 export default function Hero() {
+  const [email, setEmail] = useState("");
+
   return (
     <section className="mx-auto max-w-7xl px-8 py-20">
       <div className="flex flex-col items-center justify-center text-center">
@@ -24,13 +29,18 @@ export default function Hero() {
             their local bank account.
           </p>
 
-          <div className="mx-auto mt-5 md:mt-9 flex max-w-120 gap-3">
+          <div className="mx-auto mt-5 md:mt-9 flex max-w-120 w-full gap-3">
             <input
               type="email"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
               className="bg-card border-fbord text-sm md:text-md focus:border-coral flex-1 rounded-xl border px-4 py-3 text-white outline-0 focus:text-white"
               placeholder="Enter your email address"
             />
-            <button className="from-coral to-amber cursor-pointer rounded-xl bg-linear-to-r py-3 px-7 flex-nowrap text-xs md:text-[14px] font-bold transition-all duration-200 hover:brightness-80">
+            <button 
+              onClick={() => openTallyForm(email)}
+              className="from-coral to-amber cursor-pointer rounded-xl bg-linear-to-r py-3 px-7 flex-nowrap text-xs md:text-[14px] font-bold transition-all duration-200 hover:brightness-80"
+            >
               Join Waitlist
             </button>
           </div>

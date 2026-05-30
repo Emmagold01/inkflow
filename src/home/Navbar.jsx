@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Icon } from "@iconify/react";
 import { openTallyForm } from "../utils/tally";
+import logo from "../assets/inkflow_logo2.png";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -11,8 +12,9 @@ export default function Navbar() {
     <nav className="border-fbord bg-darkbg/90 sticky top-0 z-50 border-b backdrop-blur-md">
       <div className="mx-auto max-w-7xl px-5 py-5 md:px-10">
         <div className="flex items-center justify-between">
-          <div className="from-coral to-amber font-playfair bg-linear-to-r bg-clip-text text-2xl font-extrabold text-transparent">
-            Inkflow
+      
+          <div>
+            <img src={logo} alt="logo" className="h-10 lg:h-13 " />
           </div>
 
           {/* Desktop Menu */}
@@ -29,7 +31,7 @@ export default function Navbar() {
               </li>
             </ul>
 
-            <button 
+            <button
               onClick={() => openTallyForm()}
               className="from-coral to-amber cursor-pointer rounded-md bg-linear-to-r px-6 py-2 text-[14px] font-bold transition-all duration-200 hover:brightness-80"
             >
@@ -66,7 +68,11 @@ export default function Navbar() {
               </a>
             </li>
             <li className="transition duration-300 hover:text-white">
-              <a href="#features" onClick={toggleMobile} className="block w-full">
+              <a
+                href="#features"
+                onClick={toggleMobile}
+                className="block w-full"
+              >
                 For Authors
               </a>
             </li>
@@ -76,7 +82,7 @@ export default function Navbar() {
               </a>
             </li>
             <li className="pt-2">
-              <button 
+              <button
                 onClick={() => {
                   openTallyForm();
                   toggleMobile();

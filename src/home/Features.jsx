@@ -4,12 +4,12 @@ export default function Features() {
   const data = [
     {
       icon: "iconamoon:box-thin",
-      h3: "Naira Payouts",
+      h3: "Print-on-Demand",
       p: "No warehouse, no upfront cost. When a reader orders a physical copy, we print and ship it automatically.",
     },
     {
       icon: "uiw:pay",
-      h3: "Print-on-Demand",
+      h3: "Naira Payouts",
       p: "Connect your Nigerian bank account and receive royalties directly — no dollar conversions, no stress.",
     },
     {

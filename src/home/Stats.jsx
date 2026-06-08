@@ -1,6 +1,6 @@
 export default function Stats() {
   return (
-    <section className="border-fbord bg-darkbg2 my-3 border-t border-b">
+    <section className="border-fbord bg-darkbg2/60 backdrop-blur-md my-3 border-t border-b">
       <div className="mx-auto max-w-5xl px-6 py-12 md:px-15">
         <div className="flex items-center justify-start lg:justify-center gap-12 md:gap-15 overflow-x-auto no-scrollbar snap-x snap-mandatory">
           <div className="text-center shrink-0 snap-center min-w-35 md:min-w-0">
